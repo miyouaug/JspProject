@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <title>Four Seasons Hoetel and Resorts</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <style>
+         *,html,body{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       html,body{
+           height: 100%;
+           margin: 0 auto;
+       }
+       #wrap{
+           width: 1300px;
+           height: 100%;
+           margin: 0 auto;
+       }
+       .top_menu{
+          width: 1300px;
+          height: 50px;
+          background-color: white;
+          top:0;
+          display: flex;
+          position: fixed;
+          z-index: 5;
+       }
+       .top_menu img{
+           width: 35px;
+           height: 35px;
+           margin-top: 10px;
+           margin-left: 20px;
+       }
+       .home{
+      	  width: 100px;
+          height: 40px;
+          position: absolute;
+          top:13px;
+          right: 270px;
+          font-family: Dubai;
+          font-size: 15px;
+          padding-left: 10px; 
+       		
+       }
+       .p1{
+          width: 100px;
+          height: 40px;
+          position: absolute;
+          top:13px;
+          right: 200px;
+          font-family: Dubai;
+          font-size: 15px;
+          padding-left: 10px; 
+       }
+       .p2{
+          width: 100px;
+          height: 40px;
+          position: absolute;
+          top:13px;
+          right: 100px;
+          font-family: Dubai;
+          font-size: 15px;
+          padding-left: 10px; 
+       }
+       .sec_menu{
+          width: 1300px;
+          height: 60px;
+          top:50px;
+          background-color: rgb(100, 99, 99);
+          position: fixed;
+          z-index: 5;
+       }
+       .sec_menu>ul{
+           list-style: none;
+           color:white;
+           text-align: center;
+       }
+
+       .sec_menu>ul li{
+           margin-left: 10px;
+           margin: 20px;
+           padding-right:20px;
+           font-family: Dubai;
+           font-size: 15px;
+           display:inline-block;
+           font-weight: lighter;
+       }
+
+       .sec_menu>ul li:hover{
+           color:gray;
+           cursor: pointer;
+           font-weight: 400;
+       }
+       .weclome{ 
+            top: 180px;
+            left: 200px;
+            font-family: Monotype Garamond,Garamond,serif;
+            font-size: 50px;
+            position: absolute;
+            text-align: center;
+       }
+       .more{
+            top: 300px;
+            left: 200px;
+            font-family: Monotype Garamond,Garamond,serif;
+            font-size: 25px;
+            position: absolute;
+            text-align: center;
+       }
+    
+       .update{
+            top: 350px;
+            left: 230px;
+            font-family: Dubai;
+            font-style: 12px;
+            position: absolute;  
+            border-bottom: 1px solid black;          
+        }
+        .update:hover{
+	         cursor: pointer;
+	         font-style: italic;
+        }
+       .delete{
+            top: 380px;
+            left: 230px;
+            font-family: Dubai;
+            font-style: 12px;
+            position: absolute;  
+            border-bottom: 1px solid black; 
+       }
+        .delete:hover{
+	         cursor: pointer;
+	         font-style: italic;
+        }
+        .main_page{
+          width: 1300px;
+          display: flex;
+          position: relative;
+          margin-top: 110px;
+       }
+        .img_div{
+          width: 520px;
+          position: absolute;
+          top:70px;
+          right: 70px;
+       }
+       .img_div>img{
+          width: 100%;
+       }
+       a {
+           text-decoration: none;
+           color: black;
+       }
+       a:hover{
+           cursor: pointer;
+       }
+
+      </style>
+   </head>
+   <body style="overflow-x: hidden">
+      <div id="wrap">
+         <div class="top_menu">
+           <img src="image/logo_w.png">
+           <p class="home"><a href="proj_main.jsp">HOME</a></p>
+           <p class="p1">MY FROFILE</p>
+           <p class="p2">LOGOUT</p>
+         </div>
+         <div class="sec_menu">
+             <ul>
+                 <li>FROFILE</li>
+                 <li>|</li>
+                 <li>YOUR PREFERENCES</li>
+                 <li>YOUR INRERESTS</li>
+                 <li>REQUEST AN INVOICE</li>
+             </ul>
+         </div>
+        
+        <div class="main_page">
+        <div>
+         <p class="weclome">Welcome, <br> <%=dto.getName() %>!</p>   
+          <p class="more">Please tell us more about you.</p>   
+          <p class="update"><a href="proj_upd.html">UPDATE YOUR FROFILE</a></p>
+        </div>
+        <div class="img_div"><img src="image/fs_login.png"></div>
+       </div>
+
+      </div>
+   </body>
+</html>
