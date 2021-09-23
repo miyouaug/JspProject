@@ -1,0 +1,170 @@
+      *,html,body{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       html,body{
+           height: 100%;
+           margin: 0 auto;
+       }
+       #wrap{
+           width: 1300px;
+           height: 100%;
+           margin: 0 auto;
+       }
+       .top_menu{
+          width: 1300px;
+          height: 50px;
+          background: white;
+          box-shadow: 5px 5px 5px rgb(135, 135, 135, 0.7);
+          top:0;
+          display: flex;
+          position: fixed;
+          z-index: 5;
+       }
+       .top_menu img{
+           width: 35px;
+           height: 35px;
+           margin-top: 10px;
+           margin-left: 20px;
+       }
+       .reiv{
+          width: 200px;
+          height: 40px;
+          position: absolute;
+          top:13px;
+          right: 100px;
+          font-family: Dubai;
+          font-size: 15px;
+          padding-left: 10px;
+       }
+       .home{
+      	  width: 100px;
+          height: 40px;
+          position: absolute;
+          top:13px;
+          right: 270px;
+          font-family: Dubai;
+          font-size: 15px;
+          padding-left: 10px; 
+       }
+       .loginout{
+          width: 100px;
+          height: 40px;
+          position: absolute;
+          top:13px;
+          right: 60px;
+          font-family: Dubai;
+          font-size: 15px;
+          padding-left: 10px; 
+       }
+      
+       a {
+           text-decoration: none;
+           color: black;
+       }
+       a:hover{
+	         cursor: pointer;
+       }
+       .main_page{
+          width: 1300px;
+          display: flex;
+          position: relative;
+          margin-top: 50px;
+       }
+  	 .img_div{
+          width: 520px;
+          position: absolute;
+          top:70px;
+          right: 70px;
+       }
+       .img_div>img{
+          width: 100%;
+       }
+       .room{
+          width: 520px;
+          position: absolute;
+          top:20px;
+          right: 70px;
+       }
+        .room>img{
+          width: 100%;
+       }
+       .list{
+         position: absolute;
+         top:130px;
+         left: 70px;
+         font-family: Monotype Garamond,Garamond,serif;
+         font-style:italic;
+         font-size: 20px;
+       }
+       table{
+         width: 600px;
+         position: absolute;
+         top:160px;
+         left: 70px;
+         font-family: Dubai;
+       }
+       .write{
+        position: absolute;
+         top:140px;
+         left: 630px;
+         font-family: Monotype Garamond,Garamond,serif;
+         font-style:italic;
+         font-size: 20px;
+       }
+      .page{
+         position: absolute;
+         top:430px;
+         left: 320px;
+       }
+       .md{
+	     position: absolute;
+	     font-family: Monotype Garamond,Garamond,serif;
+         font-style:italic;
+         font-size: 20px;
+         top:140px;
+         left:540px;
+       }
+       .www{
+       	border:none;
+         background-color:transparent;
+       	 font-family: Monotype Garamond,Garamond,serif;
+       	 font-style:italic;
+       	  font-size: 20px;
+       }
+       .bawr{
+        position: absolute;
+        top:510px;
+        left:570px;
+       }
+       .bawr2{
+	        position: absolute;
+	        top:550px;
+	        left:570px;
+       }
+       .www:hover{
+        cursor: pointer;
+       }
+
+	table.type10 {
+	  border-collapse: separate;
+	  border-spacing: 1px;
+	  text-align: left;
+	  line-height: 1.5;
+	  border-top: 1px solid #ccc;
+	  margin : 10px 5px;
+	}
+	table.type10 th {
+	  width: 150px;
+	  padding: 5px;
+	  font-weight: bold;
+	  vertical-align: top;
+	  border-bottom: 1px solid #ccc;
+	}
+	table.type10 td {
+	  width: 350px;
+	  padding: 5px;
+	  vertical-align: top;
+	  border-bottom: 1px solid #ccc;
+	}
